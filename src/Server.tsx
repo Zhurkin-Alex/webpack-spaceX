@@ -10,6 +10,7 @@ const port = 4000
 const server = express()
 const jsFiles: Array<string> = []
 
+
 fs.readdirSync('./dist/assets').forEach(file => {
     if (file.split('.').pop() === 'js') jsFiles.push('/assets/' + file)
 })
